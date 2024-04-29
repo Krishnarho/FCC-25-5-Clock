@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 680px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.counter {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.card {
+    border: 1px solid gray;
+    border-radius: 0.5rem;
+}
+
+.card h2 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 0.5rem 2rem;
+    background-color: rgb(234, 230, 230);
+    border-radius: 0.5rem 0.5rem 0 0;
+    border-bottom: 1px solid gray;
+}
+
+.card .buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+button {
+    border: 1px solid blue;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    color: blue;
+    transition: 0.3s all ease-in-out;
+}
+
+button:hover {
+    background-color: blue;
+    border: 1px solid gray;
+    color: white;
+}
+
+button:disabled {
+    cursor: no-drop;
+    background-color: transparent;
+    color: blue;
+}
+
+.card .buttons span {
+    font-size: 2rem;
+}
+
+.display {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+    padding: 1rem 3rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+}
+
+.display span {
+    font-size: 3rem;
+    margin: 0.5rem 0;
+
+}
+
+.display .controls {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    width: 100%;
+}
+
+.display .controls button {
+    padding: 1rem 1.25rem;
+}
